@@ -14,12 +14,13 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //dev-o7spjdeknvmdeex8.us.auth0.com  =domain
 //00ZU7v49jahGeUAIuFdNjzbK4SAkY2mH  =client ID
 
+const uri='http://localhost:3000/upload';
 root.render(
   <Auth0Provider
     domain="dev-o7spjdeknvmdeex8.us.auth0.com"
     clientId="00ZU7v49jahGeUAIuFdNjzbK4SAkY2mH"
     authorizationParams={{
-      redirect_uri: window.location.origin,
+      redirect_uri: {uri},
       cacheLocation: "localstorage",
     }}
   >
