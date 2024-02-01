@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <Auth0Provider
-    domain=" https://cozyplace.netlify.app"
+    domain="dev-o7spjdeknvmdeex8.us.auth0.com"
     clientId="00ZU7v49jahGeUAIuFdNjzbK4SAkY2mH"
     authorizationParams={{
       redirect_uri: window.location.origin,
